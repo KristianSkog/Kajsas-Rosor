@@ -1,0 +1,65 @@
+.box {
+    float: left;
+    width: 49%;
+    height: 250px;
+    display: inline-block;
+    position: relative; 
+    &:last-child {
+        &:after {
+            @include clearfix;
+        }
+    }
+}
+
+.box--path {
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    color: RGB(255, 255, 255);
+    line-height: 57px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: RGBA(245, 30, 125, 0.7);
+}
+.box--path:hover {
+    color: RGBA(0,0,0, 1.0);
+}
+
+#red-roses {
+    background: url('../../images/image-tapeter-1024-768-Blommor-Rosor-Vackra-blommor-Bilder-Ni728708.jpg') no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    margin: 0 2px 2px 0;
+}
+#yellow-roses {
+    background: url('../../images/1-Rosor-gula.jpg') no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    margin: 0 0 2px 2px;
+}
+#pink-roses {
+    background: url('../../images/ros3.jpg') no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    margin: 2px 2px 0 0;
+}
+#white-roses {
+    background: url('../../images/469324-white-rose.jpg') no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    margin: 2px 0 0 2px;
+}
+
+
+.box--text-red,
+.box--text-yellow,
+.box--text-pink,
+.box--text-white {
+    width: 100%;
+    height: 193px;
+    overflow: auto;
+    display: none;
+    position: relative;
+    top: 57px;
+    background-color: RGBA(245, 30, 125, 0.7);
+}

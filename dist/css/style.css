@@ -1,0 +1,341 @@
+html, body, ul, li, a, p, h1, h2, h3, h4, h5, div, section {
+  padding: 0;
+  margin: 0; }
+
+.header, .header--title, .header--mobile-menu {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  width: 100%;
+  height: 65px;
+  background-color: #000000; }
+
+.header--logo {
+  margin: 13px 0 12px 16px;
+  display: inline-block; }
+
+.header--mobile-menu {
+  margin: 17px 16px 0 0;
+  float: right;
+  display: inline-block; }
+  .header--mobile-menu:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.header--desktop-text {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 100px; }
+  #logo {
+    width: 321px;
+    height: 61px; }
+  .header--logo {
+    margin: 19px 0 0 19px; }
+  .header--mobile-menu {
+    display: none; }
+  .header--desktop-text {
+    display: block;
+    color: RGBA(154, 154, 154, 1);
+    font-size: 1.7rem;
+    font-style: italic;
+    line-height: 100px;
+    vertical-align: middle;
+    margin-right: 20px;
+    float: right; }
+    .header--desktop-text:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+.nav {
+  background-color: RGBA(181, 17, 95, 1);
+  overflow: auto; }
+
+.nav--ul {
+  display: none;
+  list-style-type: none; }
+
+.nav--ul-under-menu {
+  display: none;
+  list-style-type: none; }
+
+.nav--ul-under-menu-li a {
+  font-size: 1rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none; }
+  .nav--ul-under-menu-li a:before {
+    content: "- "; }
+
+.nav--li {
+  font-size: 1.375rem;
+  margin-right: 15px;
+  line-height: 1.8rem; }
+  .nav--li a {
+    font-weight: bold;
+    color: RGB(0, 0, 0); }
+
+@media screen and (min-width: 768px) {
+  .nav--ul {
+    float: right;
+    display: block;
+    list-style-type: none; }
+    .nav--ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .nav--li {
+    float: left;
+    font-size: 1rem;
+    margin-right: 15px; }
+    .nav--li a {
+      color: RGB(255, 255, 255); }
+  .nav--ul-under-menu {
+    z-index: 11;
+    position: absolute;
+    padding: 0;
+    background-color: RGBA(114, 22, 75, 0.6); }
+  .nav--ul-under-menu-li {
+    float: left; }
+    .nav--ul-under-menu-li:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .nav--ul-under-menu-li a:before {
+      content: ""; } }
+
+main {
+  display: block;
+  overflow: auto; }
+
+.jumbotron {
+  width: 100%;
+  height: 103px;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  background: url("../../images/ros3.jpg") no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  position: relative; }
+
+.jumbotron--info-bar-desktop,
+.jumbotron--info-bar-mobile {
+  display: none; }
+
+.content {
+  padding: 16px; }
+
+.left-section {
+  width: 100%; }
+
+.right-section {
+  display: none; }
+
+.wrapper {
+  overflow: auto;
+  margin: 0 auto;
+  max-width: 770px; }
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    width: 100%;
+    height: 246px; }
+  .jumbotron--info-bar-mobile {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    background-color: RGBA(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0; }
+    .jumbotron--info-bar-mobile span {
+      font-size: 0.8125rem;
+      margin: 7px 20px;
+      color: white; }
+  .content {
+    padding: 20px; }
+  .left-section {
+    width: 495px;
+    float: left;
+    margin-right: 20px; }
+  .left-section--first img {
+    width: 50%;
+    float: right; }
+  .left-section--first p {
+    width: 50%;
+    float: left; }
+  .left-section--first:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .right-section {
+    display: block;
+    width: 213px;
+    float: left; }
+  .right-section--opening-hours,
+  .right-section--phone,
+  .right-section--email,
+  .right-section--map {
+    margin-top: 20px; }
+  .wrapper {
+    overflow: auto;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 1024px) {
+  .jumbotron {
+    width: 100%;
+    height: 328px; }
+  .content {
+    box-sizing: border-box;
+    padding: 20px 30px;
+    overflow: auto;
+    background-color: RGBA(255, 255, 255, 0.9); }
+  .left-section {
+    margin-right: 40px; }
+  .left-section--first img {
+    width: 65%;
+    float: right; }
+  .left-section--first p {
+    width: 35%;
+    float: left; }
+  .left-section--first:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .jumbotron--info-bar-mobile {
+    display: none; }
+  .jumbotron--info-bar-desktop {
+    display: block;
+    width: 100%;
+    background-color: RGBA(0, 0, 0, 0.5); }
+    .jumbotron--info-bar-desktop span {
+      font-size: 0.8125rem;
+      padding: 7px 30px;
+      color: white; }
+  .wrapper {
+    width: 808px;
+    height: 100%;
+    margin: 0 auto; }
+  .wrapper--position {
+    position: absolute;
+    top: 302px; } }
+
+@media screen and (min-width: 1900px) {
+  .jumbotron {
+    height: 515px; }
+  .wrapper--position {
+    top: 448px; } }
+
+.box {
+  float: left;
+  width: 49%;
+  height: 250px;
+  display: inline-block;
+  position: relative; }
+  .box:last-child:after:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.box--path {
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  color: RGB(255, 255, 255);
+  line-height: 57px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: RGBA(245, 30, 125, 0.7); }
+
+.box--path:hover {
+  color: RGBA(0, 0, 0, 1); }
+
+#red-roses {
+  background: url("../../images/image-tapeter-1024-768-Blommor-Rosor-Vackra-blommor-Bilder-Ni728708.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  margin: 0 2px 2px 0; }
+
+#yellow-roses {
+  background: url("../../images/1-Rosor-gula.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  margin: 0 0 2px 2px; }
+
+#pink-roses {
+  background: url("../../images/ros3.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  margin: 2px 2px 0 0; }
+
+#white-roses {
+  background: url("../../images/469324-white-rose.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  margin: 2px 0 0 2px; }
+
+.box--text-red,
+.box--text-yellow,
+.box--text-pink,
+.box--text-white {
+  width: 100%;
+  height: 193px;
+  overflow: auto;
+  display: none;
+  position: relative;
+  top: 57px;
+  background-color: RGBA(245, 30, 125, 0.7); }
+
+footer {
+  display: none;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  background-color: black; }
+  footer p {
+    display: inline-block;
+    color: white; }
+  footer a {
+    display: inline-block; }
+
+@media screen and (min-width: 1024px) {
+  footer {
+    display: block;
+    clear: both; } }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  color: RGBA(189, 13, 95, 1); }
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.3125rem; }
+
+h3 {
+  font-size: 1.625rem; }
+
+h4 {
+  font-size: 1.375rem; }
+
+h5 {
+  font-size: 1.25rem; }
+
+.margin--top-xs {
+  margin-top: 0.876rem; }
+
+.margin--top-s {
+  margin-top: 1rem; }
+
+.margin--top-m {
+  margin-top: 1.25rem; }
+
+.margin--top-l {
+  margin-top: 1.563rem; }
+
+.margin--top-xl {
+  margin-top: 1.875rem; }

@@ -1,0 +1,21 @@
+footer {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 1.0);
+    p {
+        display: inline-block;
+        color: rgba(255, 255, 255, 1.0)
+    }
+    a {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    footer {
+        display: block;
+        clear: both;
+    }
+}
