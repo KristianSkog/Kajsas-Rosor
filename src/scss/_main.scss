@@ -24,6 +24,11 @@ main {
 .left-section {
     width: 100%;
 }
+.left-section--first { 
+    img {
+        width: 100%;
+    }
+}
 
 .right-section {
     display: none;
