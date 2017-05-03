@@ -1,4 +1,4 @@
-html, body, ul, li, a, p, h1, h2, h3, h4, h5, div, section {
+html, body, ul, li, a, p, h1, h2, h3, h4, h5, h6, div, section {
   padding: 0;
   margin: 0; }
 
@@ -76,6 +76,7 @@ html, body, ul, li, a, p, h1, h2, h3, h4, h5, div, section {
   margin-right: 15px;
   line-height: 1.8rem; }
   .nav--li a {
+    text-decoration: none;
     font-weight: bold;
     color: RGB(0, 0, 0); }
 
@@ -257,25 +258,25 @@ main {
   background: url("../../images/image-tapeter-1024-768-Blommor-Rosor-Vackra-blommor-Bilder-Ni728708.jpg") no-repeat;
   background-size: auto 100%;
   background-position: center center;
-  margin: 0 2px 2px 0; }
+  margin: 0 1% 1% 0; }
 
 #yellow-roses {
   background: url("../../images/1-Rosor-gula.jpg") no-repeat;
   background-size: auto 100%;
   background-position: center center;
-  margin: 0 0 2px 2px; }
+  margin: 0 0 1% 1%; }
 
 #pink-roses {
   background: url("../../images/ros3.jpg") no-repeat;
   background-size: auto 100%;
   background-position: center center;
-  margin: 2px 2px 0 0; }
+  margin: 1% 1% 0 0; }
 
 #white-roses {
   background: url("../../images/469324-white-rose.jpg") no-repeat;
   background-size: auto 100%;
   background-position: center center;
-  margin: 2px 0 0 2px; }
+  margin: 1% 0 0 1%; }
 
 .box--text-red,
 .box--text-yellow,
@@ -288,6 +289,17 @@ main {
   position: relative;
   top: 57px;
   background-color: RGBA(245, 30, 125, 0.7); }
+
+.pink--roses-img {
+  background-image: url("../../images/IMG_5626.jpg");
+  background-size: 100%;
+  background-position: center center;
+  width: 100%;
+  height: 91px; }
+
+@media screen and (min-width: 768px) {
+  .pink--roses-img {
+    height: 132px; } }
 
 footer {
   display: none;
@@ -324,6 +336,9 @@ h4 {
 
 h5 {
   font-size: 1.25rem; }
+
+h6 {
+  font-size: 1rem; }
 
 .margin--top-xs {
   margin-top: 0.876rem; }
