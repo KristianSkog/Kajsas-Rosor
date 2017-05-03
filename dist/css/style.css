@@ -15,6 +15,10 @@ html, body, ul, li, a, p, h1, h2, h3, h4, h5, h6, div, section {
   margin: 13px 0 12px 16px;
   display: inline-block; }
 
+#logo {
+  width: 213px;
+  height: 40px; }
+
 .header--mobile-menu {
   margin: 17px 16px 0 0;
   float: right;
