@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "restricted area"
-AuthUserFile /Kajsas-Rosor/protect-me-dir/.htpasswd
+AuthUserFile ../Kajsas-Rosor/.htpasswd
 require valid-user
