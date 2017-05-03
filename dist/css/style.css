@@ -140,6 +140,10 @@ main {
 .left-section--first img {
   width: 100%; }
 
+#map {
+  height: 200px;
+  width: 100%; }
+
 .right-section {
   display: none; }
 

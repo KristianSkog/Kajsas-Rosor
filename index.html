@@ -132,7 +132,7 @@
 						</section>
 						<section class="right-section--map">
 							<h5>Karta</h5>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2031.8635820001177!2d18.044567116496456!3d59.38530348167844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9c513ca8971b%3A0xc22b811565d5fe90!2sEgilsv%C3%A4gen+3%2C+182+78+Stocksund!5e0!3m2!1ssv!2sse!4v1493829768145" width="212" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<div id="map"></div>
 						</section>
 					</div>
 
@@ -142,6 +142,21 @@
 		</main>
 		<!-- Footer -->
 	</div>
+	<script>
+      function initMap() {
+        var uluru = {lat: 59.37060289999999, lng: 17.90671729999997};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8-d4CqsKtJjVPshv4QqXjeg4uu8MBMVw&callback=initMap"
+  type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/script.min.js"></script>
 	<!-- <script src="src/js/script.js"></script> -->
